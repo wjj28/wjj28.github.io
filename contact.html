@@ -56,25 +56,25 @@
 				</div>
 				
 			</div>
-			<form action="mailto:wjlima.developer@gmail.com" method="POST" enctype="text/plain" class="presentation">
+			<form action="https://formspree.io/f/mbjbqnzg" method="POST" class="presentation">
 				<div class="parent">
 					<div class="field_name_email child">
 						<i class="fa fa-user prefix "></i>
-						<input id="name" name="from" type="text" class="form-control" placeholder="YOUR NAME" value="">
+						<input id="name" name="Name" type="text" class="form-control" placeholder="YOUR NAME*" required>
 					</div>
 					<div class="form_control col-xl-6  field_name_email child">
 						<span><i class="fa fa-envelope prefix"></i>
-							<input id="email" type="email" name="email" class="form-control" placeholder="YOUR EMAIL" value=""></span>
+							<input id="email" type="email" name="Email" class="form-control" placeholder="YOUR EMAIL*" required></span>
 						</div>
 					</div>
 					<div class="form-group col-xl-12 field_name_email">
 						<i class="fa fa-comments "></i>
 						<br>
-						<textarea id="comment" rows="8" cols="80" name="message" class="form-control" placeholder="YOUR MESSAGE"></textarea>
+						<textarea id="comment" rows="8" cols="80" name="Message" class="form-control" placeholder="YOUR MESSAGE*" required></textarea>
 					</div>
 					
 					<div class="submit-form btn">
-						<button class="btn btn_screen" type="submit">
+						<button id="btn_form" class="btn_screen" type="submit">
 						<span><i class="fa fa-paper-plane"></i> Send Message</span>
 						</button>
 					</div>
@@ -132,5 +132,6 @@
 					</div>
 				</footer>
 				<script type="text/javascript" src="js/navbar.js"></script>
+				<script type="text/javascript" src="js/submitForm.js"></script>
 			</body>
 		</html>
