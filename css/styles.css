@@ -294,7 +294,7 @@ header nav .categories:hover {
     border: none;
     border-radius: 50px;
     padding: 15px 20px;
-    margin: 10px;
+    margin: 0px 10px;
 }
 
 .btn_screen:hover {
@@ -329,38 +329,48 @@ header nav .categories:hover {
     transition: 0.5s;
 }
 
+/*----------------------------footer------------------------------------------*/
 footer {
     margin-top: auto;
-    font-family: 'Poppins';    /*background-color: #263045;*/
+    font-family: 'Poppins';
     background-color: #364461;
-    display: inline-flex;
-    padding: 1rem;
-    text-align: center;
-    color: #ffffff;
+    padding: 8px;
+    color: #fff;
 }
 
-footer div {
-    margin: auto;
-    display: inline-block;
+.footer-bottom {
+    text-align: center
+}
+
+.footer_content {
+    justify-content: space-evenly;
+    display: flex;    /*max-width: auto;*/
+
+    /*margin: auto;*/
+}
+
+.footer-bottom p {
+    float: left;    /*padding-left: 135px;*/
+    padding-top: 5px;
+    display: block;
 }
 
 footer ul .social_icon_item {
-
-    /*background-color: #0049a9;*/
-
-    color: #000;     /*background-color: #000;*/
+    color: #000;
+    align-items: center;
 }
 
 footer ul .social_icon_item:hover {
-
-    /*background-color: #0049a9;*/
-
     background-color: #bfa374;
-    border-radius: 50px;
-    transform: scale(1.1);
+    border-radius: 50px;    /*transform: scale(1.0);*/
     transition: 0.5s;
 }
 
+.footer-menu ul {
+    display: flex;
+}
+
+/*----------------------------footer------------------------------------------*/
 header .social_icon_item {
     background-color: transparent;
     color: #000;
@@ -378,12 +388,11 @@ header .social_icon_item:hover {
 .content-section {
     color: #364461;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 10px;
 }
 
 .title {
-    font-size: 25px;
-    margin-bottom: 0.1rem;
+    font-size: 25px;    /*margin-bottom: 0.1rem;*/
 }
 
 .title::after {
@@ -415,8 +424,8 @@ text-align: center;
 */
 .profile_picture img {
     border-radius: 50%;
-    width: 550px;
-    height: 550px;
+    width: 450px;
+    height: 450px;
 }
 
 @media(max-width:768px) {
@@ -433,6 +442,10 @@ text-align: center;
     }
 
 }
+
+
+/*--------------------------------------about page--------------------------*/
+
 
 .logo_picture img {
     border-radius: 50%;
@@ -476,7 +489,14 @@ text-align: center;
     text-align: center;
 }
 
-/*About resume*/
+
+
+
+.emoji {
+    font-size: 40px;
+}
+
+/*-----------------------------------About resume------------------------------------*/
 
 /*.resume_columns{
   box-sizing: border-box;
@@ -503,7 +523,7 @@ th {
 }
 
 .btn_screen_info {
-    background-color: #bfa374;    /*background-color: transparent;*/
+    background-color: #364461;    /*background-color: transparent;*/
     display: inline-block;    /*background-color: transparent;*/
     color: whitesmoke;
     border-color: #000;
@@ -513,23 +533,17 @@ th {
 }
 
 .date {
-    color: #4d686f;
+    color: #bfa374;
+    font-size: 25px;
+    text-align: center;
 }
 
-.emoji {
-    font-size: 40px;
-}
 
-/*contact page*/
-.form-control {
-    background-color: transparent;
-    border: none;
-    color: white;
-}
+
+/*------------------------------contact page------------------------------------*/
+
 
 .field_name_email {
-
-    /*background-color: #bfa374;*/
     background-color: #daa520;
     color: #fff;
     border: none;
@@ -587,32 +601,52 @@ input:focus {
     text-align: center;
 }
 
-/*projects page*/
-.grid {
+
+.form-control {
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+
+
+
+
+
+
+/*-------------------------end of contact page----------------------------*/
+/*-------------------projects page-----------------*/
+.grid,
+.grid2 {
     display: grid;
-    padding: 16px;
-    grid-gap: 25px;
+    padding: 5px 105px 25px 40px;
+    grid-gap: 35px;
     width: 90%;
     margin: auto;
 }
 
-.grid img {
+.grid img,
+.grid2 img {
     width: 100%;    /*max-width: 100%;*/
-    height: 300px;
-    align-self: start;
-    margin-bottom: 15px;       /*border-radius: 20%;  */
-    background-color: blueviolet;
+    height: 230px;
+    align-self: center;
+    margin-bottom: 10px;       /*border-radius: 20%;  */
+
+    /*background-color: blueviolet;*/
+    overflow:;
 }
 
-@media (min-width:768px) {
-    .grid {
+@media (min-width:708px) {
+    .grid,
+    .grid2 {
         grid-template-columns: repeat(2, 1fr);
     }
 
 }
 
-@media (min-width:908px) {
-    .grid {
+@media (min-width:1208px) {
+    .grid,
+    .grid2 {
         display: grid;
         grid-gap: 50px;
         grid-template-columns: repeat(3, 1fr);
@@ -620,18 +654,15 @@ input:focus {
 
 }
 
-@media (min-width:1208px) {
-    .grid {
-        display: grid;
-        grid-gap: 50px;
-        grid-template-columns: repeat(4, 1fr);
-    }
-
-}
-
 .project_title {
     margin-bottom: 10px;
-    text-align: justify-all;
+    text-align: justify;
+    color: #bfa374;
+}
+
+.project_subtitle {
+    margin-bottom: 10px;
+    text-align: justify;    /*color: #bfa374;*/
 }
 
 .col {
@@ -642,59 +673,272 @@ input:focus {
 
 .col:hover {
     color: whitesmoke;
-    transform: translateY(10px);       /*align-self: start;*/
-    s
+    transform: scale(1.1);       /*transition: 0.2s;  */
+
+    /*transform: translateY(10px);      */
 }
 
-/*articles page*/
+/*--------test project----------*/
+
+/*Projectos */
+
+.cards-project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 15px;
+    margin-top: 20px;
+    width: 343px;
+    height: 400px;
+    border-radius: 8px;
+    border: 1px solid #171717;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: 0.3s ease;
+    background-color: #364461;
+    color: #fafafa;
+    text-decoration: none;
+}
+
+.cards-project:hover {
+    color: #bfa374;
+}
+
+.cards-project img {
+    background-size: contain;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    min-height: 55%;
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.btns-project {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin: 10px;
+}
+
+.btns-project a {
+    padding: 10px;    /*margin-top: 10px;*/
+    outline: none;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.github-repo {
+    background-color: #e3ba6a;
+    border: 1px solid #FFD700;
+    color: #fff;
+}
+
+.github-repo:hover {
+    background-color: #364461;
+    border: 1px solid #FFD700;
+    color: #fff;
+}
+
+.view-live {
+    border: 1px solid #e3ba6a;
+    color: #fafafa;
+    margin: 0px;
+    align-items: center;
+}
+
+.view-live:hover {
+    background-color: #e3ba6a;
+}
+
+/*---------------show more btn-------------------------*/
+.show-more {
+    margin: 0 30px 15px auto;   
+    border-radius: 6px;
+    border: none; /*align-self: center;*/
+    /*vertical-align: middle;*/
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 550;    /*background-color: #fff;*/
+    /*color: #e3ba6a;*/
+    color: #364461;
+    outline: none;
+}
+
+.bounce {
+    -moz-animation: bounce 1s infinite;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-5px);
+    }
+
+    60% {
+        transform: translateY(0px);
+    }
+
+    80% {
+        transform: translateY(-5px);
+    }
+
+}
+
+/*Projects*/
+
+/*--------test project----------*/
+
+/*-------------------articles page------------------------------*/
+.profile_picture_article img {
+    border-radius: 50%;    /*align-items:flex-end;*/
+    width: 250px;
+    height: 250px;
+}
+
 .grid_articles {
     display: grid;
-    padding: 16px;
+    padding-left: 50px;
     grid-gap: 20px;
     width: 90%;
-    margin: auto;    /*align-content: center;*/
+    margin: auto;
 }
 
 .grid_articles img {
     width: 100%;    /*max-width: 100%;*/
-    height: 200px;
-    align-self: start;
-    margin-bottom: 15px;
+    height: 230px;
+    align-self: center;
+    margin-bottom: 10px;       /*border-radius: 20%;  */
+    background-color: blueviolet;
+}
+
+.cards-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 15px;
+    width: 343px;
+    height: 410px;
+    border-radius: 8px;    /*border: 1px solid #171717;*/
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: 0.3s ease;
+    background-color: #364461;
+    color: #fafafa;
+    text-decoration: none;
 }
 
 @media (min-width:768px) {
     .grid_articles {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        margin-left: 50px;
+    }
+
+}
+
+@media (min-width:1260px) {
+    .grid_articles {
+        display: grid;
+        grid-gap: 100px;
         grid-template-columns: repeat(3, 1fr);
     }
 
 }
 
-@media (min-width:1208px) {
-    .grid_articles {
-        display: grid;
-        grid-gap: 50px;
-        grid-template-columns: repeat(5, 1fr);
-    }
-
+/* THE CARD HOLDS THE FRONT AND BACK FACES */
+.thecard {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
 }
 
-.project_sub_title {
-    color: blue;
+/* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
+
+/* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
+.thefront {
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    color: #000;     /*transform: rotateY(0deg);*/
 }
 
-.article_date {
-    text-align: justify;
-    padding-left: 20px;
-    padding-bottom: 5px;    /*text-align: right;*/
+/* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
+.theback {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;  /*overflow: hidden;*/
 
-    /*background-color: red;*/
-
-    color: red;
+    /*background: #fafafa;*/
+    color: #333;
+    text-align: center;
+    transform: rotateY(180deg);
 }
 
-.article_date span {
-    font-size: 15px;
-    color: whitesmoke;
+.thecard:hover,
+.theback:hover {
+    transform: rotateY(180deg);
+}
+
+.btns-article {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;    /*margin: 10px;*/
+}
+
+.btns-article a {
+    padding: 10px;    /*margin-top: 10px;*/
+    outline: none;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.view-article {
+    border: 1px solid #e3ba6a;
+    color: #fafafa;
+    margin: 0px;
+    align-items: center;
+}
+
+.articles_links {
+    text-align: left;
+    padding-bottom: 50px;
+}
+
+.articles_links li {
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.articles_links a {
+    color: #fafafa;
+    text-decoration: none;
+}
+
+.articles_links a:hover {
+    color: #bfa374;
 }
 
 /*color palette
@@ -704,3 +948,42 @@ input:focus {
 #4d686f
 #364461
 */
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 450px;  /*border: 1px solid #f1f1f1;*/
+
+    /*perspective: 1000px;  Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 2s;
+    transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+/* Style the back side */
+.flip-card-back {
+    transform: rotateY(180deg);
+}
