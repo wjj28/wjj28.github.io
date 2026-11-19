@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<meta charset="utf-8">
+		<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ctext y=%22.9em%22 font-size=%2290%22%3E%F0%9F%A4%96%3C/text%3E%3C/svg%3E">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,49 +25,122 @@
 				<nav>
 					<div class="menu">
 						<li><span><a href="about.html" class="categories">ABOUT ME</a></span></li>
-						<li><span><a href="articles.html" class="categories">ARTICLES</a></span></li>
+						<li><span><a href="articles.html" class="categories">STUDA KU MI</a></span></li>
 						<li><span><a href="contact.html" class="categories">GET IN TOUCH</a></span></li>
 					</div>
 
-					<button class="hamburger">
+					<button class="hamburger" type="button" aria-label="Open menu" aria-expanded="false">
 						<span class="material-icons">menu</span>
 					</button>
 				</nav>
 
 				<div class="mobile-menu">
 					<a href="about.html">ABOUT ME</a>
-					<a href="articles.html">ARTICLES</a>
+					<a href="articles.html">STUDA KU MI</a>
 					<a href="contact.html">GET IN TOUCH</a>
 				</div>
 			</div>
 		</header>
 
 		<!-- Presentation -->
-		<div class="presentation col-12 col-md-6 d-flex vh-100">
-			<div class="child_two_index col-12 col-md-6 d-flex vh-60">
-				<div class="all_caps">
-					<h3>Hey there!👋🏾</h3>
-					<h1>I'm Willy 威利</h1>
-					<h4>A <em><span class="all_caps auto_typed"></span></em></h4>
-				</div>
-				<br>
-				<div class="two_buttons">
-					<a href="about.html">
-						<button class="btn_screen">
-							<span>MORE ABOUT ME</span>
-						</button>
-					</a>
-					<a href="contact.html">
-						<button class="btn_secondary">
-							<span>GET IN TOUCH</span>
-						</button>
-					</a>
+		<main class="hero">
+			<div class="buddy" id="buddy" aria-hidden="true">
+				<div class="buddy-inner">
+					<svg class="buddy-body" viewBox="0 0 64 62" width="64" height="62">
+						<g class="b-leg b-leg-l"><path d="M27 28V50"/><ellipse cx="25" cy="53" rx="6.5" ry="3.6"/></g>
+						<g class="b-leg b-leg-r"><path d="M37 28V50"/><ellipse cx="39" cy="53" rx="6.5" ry="3.6"/></g>
+						<g class="b-arm b-arm-l"><path d="M20 9V25"/><circle cx="20" cy="27" r="3.6"/></g>
+						<rect class="b-torso" x="18" y="2" width="28" height="29" rx="10"/>
+						<path class="b-zip" d="M32 6V30"/>
+						<g class="b-arm b-arm-r"><path d="M44 9V25"/><circle cx="44" cy="27" r="3.6"/></g>
+					</svg>
+					<svg class="buddy-head buddy-head-side" viewBox="0 0 46 46" width="46" height="46">
+						<circle cx="17" cy="27" r="3.6" fill="#7d4e33"/>
+						<ellipse cx="24" cy="26.5" rx="13.5" ry="16" fill="#8d5a3b"/>
+						<circle cx="37.6" cy="27.4" r="2.6" fill="#8d5a3b"/>
+						<path d="M12 27 Q11 43 25 43.6 Q38 43 37.6 31.5 Q33 33.4 28 31.2 Q20 29 15 30.4 Q13 29.4 12 27Z" fill="#2b1f1a"/>
+						<path d="M29.6 33.8 Q33.6 37.4 36.8 33.4 Q33.2 34.8 29.6 33.8Z" fill="#fff"/>
+						<path d="M28 18.6 Q32 16.8 35.6 18.8" fill="none" stroke="#2b1f1a" stroke-width="1.6" stroke-linecap="round"/>
+						<ellipse cx="31.6" cy="24.2" rx="2.8" ry="3.2" fill="#fff"/>
+						<circle cx="32.6" cy="24.6" r="1.8" fill="#1d1d1d"/>
+						<path d="M9 19 Q7 4 24 3 Q40 3 39 16 Q39 18 37 18 Q24 13 11 20 Q9.5 20.5 9 19Z" fill="#45648c"/>
+						<path d="M29 14.6 Q40 13.6 45.5 19.4 Q38 17.6 29.6 18.8Z" fill="#30486b"/>
+						<circle cx="24" cy="3.4" r="1.7" fill="#30486b"/>
+					</svg>
+					<svg class="buddy-head buddy-head-front" viewBox="0 0 46 46" width="46" height="46">
+						<circle cx="7" cy="27" r="3.6" fill="#7d4e33"/>
+						<circle cx="39" cy="27" r="3.6" fill="#7d4e33"/>
+						<ellipse cx="23" cy="26.5" rx="15" ry="16" fill="#8d5a3b"/>
+						<path d="M8.2 25 Q7.5 43 23 43.6 Q38.5 43 37.8 25 Q35 31.5 30 30.2 Q23 28.4 16 30.2 Q11 31.5 8.2 25Z" fill="#2b1f1a"/>
+						<path d="M16.2 32.2 Q23 39.5 29.8 32.2 Q23 34 16.2 32.2Z" fill="#fff"/>
+						<path d="M11.5 18.6 Q15 16.6 19 18.2 M27 18.2 Q31 16.6 34.5 18.6" fill="none" stroke="#2b1f1a" stroke-width="1.6" stroke-linecap="round"/>
+						<ellipse cx="15.5" cy="24.2" rx="3" ry="3.3" fill="#fff"/><circle cx="16" cy="24.6" r="1.8" fill="#1d1d1d"/>
+						<ellipse cx="30.5" cy="24.2" rx="3" ry="3.3" fill="#fff"/><circle cx="31" cy="24.6" r="1.8" fill="#1d1d1d"/>
+						<path d="M5.5 18.5 Q2.5 4.5 21 3 Q42 1.5 41.5 14.5 Q42.5 19.5 38 18 Q23 12.5 8 19.5 Q6 20.3 5.5 18.5Z" fill="#45648c"/>
+						<path d="M4.6 18.2 Q13 12.6 27 14.6 L26.4 18.6 Q14 16.8 6.4 21.4 Q4.4 21 4.6 18.2Z" fill="#30486b"/>
+						<circle cx="22.5" cy="3.4" r="1.7" fill="#30486b"/>
+					</svg>
+					<div class="buddy-props">
+						<i class="prop prop-ball fas fa-futbol"></i>
+						<span class="prop prop-shark"></span>
+						<i class="prop prop-basket fas fa-basketball-ball"></i>
+						<span class="prop-cable"><i></i></span>
+						<span class="prop prop-book"><i class="fas fa-book"></i><i class="fas fa-book-open"></i></span>
+					</div>
 				</div>
 			</div>
-		</div>
+			<div class="hero-copy">
+				<p class="hero-eyebrow">Hey there! 👋🏾</p>
+				<h1 class="hero-title">I'm Willy <span>威利</span></h1>
+				<p class="hero-typed">A <span class="auto_typed"></span></p>
+
+				<div class="hero-actions">
+					<a class="btn_screen" href="about.html" aria-label="More about me" data-tip="More about me"><i class="fas fa-user" aria-hidden="true"></i><span>MORE ABOUT ME</span></a>
+					<a class="btn_secondary" href="contact.html" aria-label="Get in touch" data-tip="Get in touch"><i class="fas fa-paper-plane" aria-hidden="true"></i><span>GET IN TOUCH</span></a>
+				</div>
+			</div>
+
+			<div class="hero-art">
+				<ul class="globe-facts" aria-label="Curiosities">
+					<li class="globe-fact is-on">
+						<div class="gift-stage"><div class="gift" aria-hidden="true"><div class="gift-lid"></div><div class="gift-body"></div></div><div class="gift-spark" aria-hidden="true"></div><div class="prize"><svg class="prize-map" viewBox="0 0 200 186" role="img" aria-label="Map of the islands of Cabo Verde"><path d="M51.7,172.8L52.5,173.5L53.0,174.5L53.3,175.7L53.3,177.0L53.0,178.2L52.5,178.7L51.7,179.0L51.5,179.8L50.7,179.8L50.2,179.0L49.0,178.2L48.5,177.3L48.0,177.8L48.2,177.1L48.5,176.5L48.2,175.9L48.0,175.2L49.0,175.2L48.7,173.9L49.5,173.4L50.7,173.3L51.7,172.8ZM80.4,171.6L79.9,172.3L80.1,173.2L80.4,174.0L80.6,174.8L80.1,175.5L77.6,177.8L74.6,178.9L72.1,178.6L69.6,177.3L65.6,173.9L64.6,172.5L64.3,171.1L64.6,169.6L65.6,167.8L66.8,166.3L68.6,165.1L72.9,162.9L74.1,162.4L75.6,162.2L77.1,162.6L77.9,163.5L78.6,164.6L79.6,167.0L80.4,170.6L80.4,171.6ZM139.0,163.8L139.2,164.5L140.0,164.8L139.5,165.9L139.0,166.5L137.4,167.8L138.0,168.3L137.2,169.5L136.9,170.6L136.2,171.4L135.2,171.8L134.7,171.9L133.7,172.2L133.2,172.3L132.7,172.2L131.9,171.9L131.4,171.8L129.2,171.8L127.1,171.6L125.4,171.0L123.6,170.2L120.9,167.9L119.9,166.7L119.9,164.2L119.1,163.7L117.8,163.3L116.8,162.9L116.3,160.9L115.8,160.3L115.6,159.9L115.6,159.3L116.6,157.0L116.8,156.4L116.8,155.4L115.8,152.9L116.6,152.7L117.1,152.2L117.3,151.5L117.3,150.6L117.6,149.9L117.8,149.4L118.1,149.0L118.3,148.6L118.1,147.4L117.6,145.9L116.8,144.8L115.8,144.3L116.3,144.2L117.8,143.5L116.8,143.0L116.3,143.0L118.3,141.4L118.9,141.4L118.9,142.0L119.1,142.5L119.4,143.0L120.6,142.1L121.6,142.7L122.1,144.1L121.1,145.0L122.1,146.3L123.1,147.0L125.6,148.4L124.9,148.9L126.1,149.1L126.9,149.6L127.9,151.5L129.9,153.8L131.2,154.5L132.2,154.4L132.4,154.8L132.7,155.1L133.2,155.4L133.4,155.9L133.9,156.4L134.9,156.2L135.2,156.6L134.9,157.1L138.0,162.9L138.5,163.1L139.0,163.8ZM161.8,143.0L162.3,143.8L162.3,145.0L162.3,146.9L163.1,151.1L163.1,153.0L161.8,154.9L160.3,155.3L159.8,155.7L159.3,156.6L158.1,157.0L157.1,156.7L155.5,155.9L154.0,154.6L153.3,153.8L152.8,152.9L153.0,151.9L153.5,151.1L153.8,150.2L153.3,149.4L154.3,148.8L154.8,147.9L154.3,147.0L153.3,146.9L153.5,145.9L155.0,144.7L156.0,143.0L155.8,142.6L156.6,142.0L157.6,141.4L157.6,142.4L158.1,141.9L158.6,141.4L159.1,141.9L158.6,142.4L159.6,142.9L161.1,142.5L161.8,143.0ZM193.0,84.7L193.7,85.5L194.0,86.3L193.7,86.7L193.2,87.7L193.2,88.3L192.0,89.1L188.2,92.2L185.7,93.6L184.4,93.9L180.4,94.2L179.7,94.1L178.9,93.8L177.9,93.0L177.2,92.7L174.6,91.5L173.6,90.7L173.4,89.1L173.4,87.8L173.6,86.5L174.4,85.5L175.4,85.1L176.9,83.9L176.2,77.5L176.7,75.2L176.9,75.8L177.2,76.1L178.2,76.8L179.4,77.4L181.2,78.0L182.7,78.1L183.4,77.5L183.9,76.4L185.2,76.1L189.2,77.1L190.0,77.5L190.7,78.0L191.0,78.5L191.5,80.0L193.0,80.7L193.2,81.9L193.0,84.7ZM96.2,48.3L97.7,49.4L98.5,49.9L98.7,49.5L98.7,52.1L98.0,52.2L93.0,52.4L87.7,49.9L84.7,49.2L81.9,50.3L80.9,51.5L78.9,55.2L78.4,57.9L77.6,57.0L76.6,54.3L76.4,53.7L75.9,53.2L75.4,52.6L75.4,51.6L75.4,50.9L75.1,50.3L74.6,49.9L74.1,49.8L72.4,49.3L71.3,48.1L70.8,46.5L71.6,44.9L75.6,43.4L76.4,43.5L77.1,43.9L78.1,44.4L79.6,45.9L80.6,46.3L81.1,46.3L85.2,45.7L85.9,45.9L88.4,47.1L88.9,47.2L94.7,47.7L96.2,48.3ZM175.7,49.8L174.9,44.3L173.9,42.2L172.4,42.9L172.1,41.8L171.9,40.5L172.1,39.1L172.9,38.4L171.9,37.6L171.6,36.9L171.4,35.9L171.4,33.7L172.9,32.6L176.2,30.4L176.7,31.0L177.9,32.1L178.2,32.7L177.7,33.8L177.2,34.6L177.4,34.9L177.4,39.5L177.7,40.8L177.9,41.3L178.9,42.2L179.2,42.7L178.9,43.4L178.7,44.9L178.7,45.6L178.4,46.0L177.9,46.5L177.7,46.8L177.9,47.8L178.2,48.3L177.7,48.9L177.2,49.2L176.7,49.4L175.7,49.8ZM36.7,28.0L37.2,28.9L38.2,29.5L39.2,29.9L39.4,30.3L39.7,31.3L39.9,32.2L39.9,33.0L38.7,33.8L37.2,34.5L35.2,34.8L33.4,34.9L32.9,35.1L32.4,35.8L31.9,35.9L31.4,35.8L27.1,34.1L26.4,33.7L25.9,33.2L25.6,32.5L24.6,33.0L24.9,31.4L25.6,30.2L26.6,29.3L27.6,28.9L29.9,28.9L30.6,28.4L30.4,27.5L32.4,26.4L32.6,25.9L33.1,25.9L33.6,27.0L34.4,26.8L35.4,25.9L36.2,26.2L36.9,27.0L37.2,27.6L36.7,28.0ZM27.9,17.8L27.4,18.5L23.1,20.5L21.1,22.4L19.8,24.3L18.1,25.5L15.0,25.9L12.3,25.9L11.5,26.1L11.0,26.4L10.3,26.4L9.5,25.6L9.3,24.8L9.3,20.0L8.3,18.3L6.8,17.8L6.0,16.3L6.3,15.2L8.0,13.2L9.0,12.6L10.0,12.5L11.0,12.5L11.5,12.5L12.3,12.0L14.0,10.4L15.3,9.8L17.1,8.8L18.6,8.3L22.8,6.2L24.1,6.0L24.9,6.2L25.6,6.9L27.4,6.7L28.4,7.1L29.1,7.6L29.4,8.1L29.4,9.8L29.6,10.2L31.4,10.5L31.9,11.2L32.9,12.0L33.1,12.5L33.1,13.2L32.6,14.0L30.1,16.8L29.4,17.0L28.1,17.5Z"/></svg></div></div>
+						<div class="fact-text"><strong>Cabo Verde</strong><p>Ten islands in the Atlantic, nine of them inhabited. “Morabeza” is our word for warm hospitality.</p></div>
+					</li>
+					<li class="globe-fact" data-act="shark">
+						<div class="gift-stage"><div class="gift" aria-hidden="true"><div class="gift-lid"></div><div class="gift-body"></div></div><div class="gift-spark" aria-hidden="true"></div><div class="prize"><i class="fas fa-futbol" aria-hidden="true"></i></div></div>
+						<div class="fact-text"><strong>Football</strong><p>The islands' favourite sport: every region has its own league, and the champions meet for the national title.</p></div>
+					</li>
+					<li class="globe-fact">
+						<div class="gift-stage"><div class="gift" aria-hidden="true"><div class="gift-lid"></div><div class="gift-body"></div></div><div class="gift-spark" aria-hidden="true"></div><div class="prize"><img class="prize-crest" src="images/tubaroes-azuis.png" alt="Tubarões Azuis crest" onerror="this.remove()"><svg class="prize-shark" viewBox="0 0 64 64" role="img" aria-label="Blue shark"><defs><clipPath id="shark-clip"><circle cx="32" cy="32" r="30"/></clipPath></defs><circle cx="32" cy="32" r="30" fill="#0a4ea3" stroke="#fff" stroke-width="2"/><g clip-path="url(#shark-clip)"><path d="M19 43 C25 31 33 20 45 14 C42 25 43 35 48 43 Z" fill="#fff"/><path d="M0 44 q6 -6 12 0 t12 0 t12 0 t12 0 t12 0 t12 0 V64 H0 Z" fill="#5fa8e8"/><path d="M-4 52 q6 -6 12 0 t12 0 t12 0 t12 0 t12 0 t12 0 V64 H-4 Z" fill="#0a3a7a"/></g></svg></div></div>
+						<div class="fact-text"><strong>Tubarões Azuis</strong><p>Cabo Verde's national team, the Blue Sharks, reached its first World Cup in 2026.</p></div>
+					</li>
+					<li class="globe-fact" data-act="drop">
+						<div class="gift-stage"><div class="gift" aria-hidden="true"><div class="gift-lid"></div><div class="gift-body"></div></div><div class="gift-spark" aria-hidden="true"></div><div class="prize"><img class="prize-crest" src="images/arbss.png" alt="ARBSS logo" onerror="this.remove()"><i class="fas fa-basketball-ball prize-basket" aria-hidden="true"></i></div></div>
+						<div class="fact-text"><strong>Basketball · ARBSS</strong><p>The Associação Regional de Basquetebol de Santiago Sul runs basketball in the Praia region. <a href="https://arbss-basket.cv/" target="_blank" rel="noreferrer">arbss-basket.cv →</a></p></div>
+					</li>
+					<li class="globe-fact">
+						<div class="gift-stage"><div class="gift" aria-hidden="true"><div class="gift-lid"></div><div class="gift-body"></div></div><div class="gift-spark" aria-hidden="true"></div><div class="prize"><i class="fab fa-python prize-python" aria-hidden="true"></i></div></div>
+						<div class="fact-text"><strong>Python</strong><p>Named after Monty Python, not the snake. It is the language I reach for first.</p></div>
+					</li>
+					<li class="globe-fact" data-act="cable">
+						<div class="gift-stage"><div class="gift" aria-hidden="true"><div class="gift-lid"></div><div class="gift-body"></div></div><div class="gift-spark" aria-hidden="true"></div><div class="prize"><svg class="prize-cable" viewBox="0 -6 234 244" role="img" aria-label="Schematic map: the EllaLink cable passing Cabo Verde, with a branch landing in Praia"><path class="cable-islands" d="M51.7,172.8L52.5,173.5L53.0,174.5L53.3,175.7L53.3,177.0L53.0,178.2L52.5,178.7L51.7,179.0L51.5,179.8L50.7,179.8L50.2,179.0L49.0,178.2L48.5,177.3L48.0,177.8L48.2,177.1L48.5,176.5L48.2,175.9L48.0,175.2L49.0,175.2L48.7,173.9L49.5,173.4L50.7,173.3L51.7,172.8ZM80.4,171.6L79.9,172.3L80.1,173.2L80.4,174.0L80.6,174.8L80.1,175.5L77.6,177.8L74.6,178.9L72.1,178.6L69.6,177.3L65.6,173.9L64.6,172.5L64.3,171.1L64.6,169.6L65.6,167.8L66.8,166.3L68.6,165.1L72.9,162.9L74.1,162.4L75.6,162.2L77.1,162.6L77.9,163.5L78.6,164.6L79.6,167.0L80.4,170.6L80.4,171.6ZM139.0,163.8L139.2,164.5L140.0,164.8L139.5,165.9L139.0,166.5L137.4,167.8L138.0,168.3L137.2,169.5L136.9,170.6L136.2,171.4L135.2,171.8L134.7,171.9L133.7,172.2L133.2,172.3L132.7,172.2L131.9,171.9L131.4,171.8L129.2,171.8L127.1,171.6L125.4,171.0L123.6,170.2L120.9,167.9L119.9,166.7L119.9,164.2L119.1,163.7L117.8,163.3L116.8,162.9L116.3,160.9L115.8,160.3L115.6,159.9L115.6,159.3L116.6,157.0L116.8,156.4L116.8,155.4L115.8,152.9L116.6,152.7L117.1,152.2L117.3,151.5L117.3,150.6L117.6,149.9L117.8,149.4L118.1,149.0L118.3,148.6L118.1,147.4L117.6,145.9L116.8,144.8L115.8,144.3L116.3,144.2L117.8,143.5L116.8,143.0L116.3,143.0L118.3,141.4L118.9,141.4L118.9,142.0L119.1,142.5L119.4,143.0L120.6,142.1L121.6,142.7L122.1,144.1L121.1,145.0L122.1,146.3L123.1,147.0L125.6,148.4L124.9,148.9L126.1,149.1L126.9,149.6L127.9,151.5L129.9,153.8L131.2,154.5L132.2,154.4L132.4,154.8L132.7,155.1L133.2,155.4L133.4,155.9L133.9,156.4L134.9,156.2L135.2,156.6L134.9,157.1L138.0,162.9L138.5,163.1L139.0,163.8ZM161.8,143.0L162.3,143.8L162.3,145.0L162.3,146.9L163.1,151.1L163.1,153.0L161.8,154.9L160.3,155.3L159.8,155.7L159.3,156.6L158.1,157.0L157.1,156.7L155.5,155.9L154.0,154.6L153.3,153.8L152.8,152.9L153.0,151.9L153.5,151.1L153.8,150.2L153.3,149.4L154.3,148.8L154.8,147.9L154.3,147.0L153.3,146.9L153.5,145.9L155.0,144.7L156.0,143.0L155.8,142.6L156.6,142.0L157.6,141.4L157.6,142.4L158.1,141.9L158.6,141.4L159.1,141.9L158.6,142.4L159.6,142.9L161.1,142.5L161.8,143.0ZM193.0,84.7L193.7,85.5L194.0,86.3L193.7,86.7L193.2,87.7L193.2,88.3L192.0,89.1L188.2,92.2L185.7,93.6L184.4,93.9L180.4,94.2L179.7,94.1L178.9,93.8L177.9,93.0L177.2,92.7L174.6,91.5L173.6,90.7L173.4,89.1L173.4,87.8L173.6,86.5L174.4,85.5L175.4,85.1L176.9,83.9L176.2,77.5L176.7,75.2L176.9,75.8L177.2,76.1L178.2,76.8L179.4,77.4L181.2,78.0L182.7,78.1L183.4,77.5L183.9,76.4L185.2,76.1L189.2,77.1L190.0,77.5L190.7,78.0L191.0,78.5L191.5,80.0L193.0,80.7L193.2,81.9L193.0,84.7ZM96.2,48.3L97.7,49.4L98.5,49.9L98.7,49.5L98.7,52.1L98.0,52.2L93.0,52.4L87.7,49.9L84.7,49.2L81.9,50.3L80.9,51.5L78.9,55.2L78.4,57.9L77.6,57.0L76.6,54.3L76.4,53.7L75.9,53.2L75.4,52.6L75.4,51.6L75.4,50.9L75.1,50.3L74.6,49.9L74.1,49.8L72.4,49.3L71.3,48.1L70.8,46.5L71.6,44.9L75.6,43.4L76.4,43.5L77.1,43.9L78.1,44.4L79.6,45.9L80.6,46.3L81.1,46.3L85.2,45.7L85.9,45.9L88.4,47.1L88.9,47.2L94.7,47.7L96.2,48.3ZM175.7,49.8L174.9,44.3L173.9,42.2L172.4,42.9L172.1,41.8L171.9,40.5L172.1,39.1L172.9,38.4L171.9,37.6L171.6,36.9L171.4,35.9L171.4,33.7L172.9,32.6L176.2,30.4L176.7,31.0L177.9,32.1L178.2,32.7L177.7,33.8L177.2,34.6L177.4,34.9L177.4,39.5L177.7,40.8L177.9,41.3L178.9,42.2L179.2,42.7L178.9,43.4L178.7,44.9L178.7,45.6L178.4,46.0L177.9,46.5L177.7,46.8L177.9,47.8L178.2,48.3L177.7,48.9L177.2,49.2L176.7,49.4L175.7,49.8ZM36.7,28.0L37.2,28.9L38.2,29.5L39.2,29.9L39.4,30.3L39.7,31.3L39.9,32.2L39.9,33.0L38.7,33.8L37.2,34.5L35.2,34.8L33.4,34.9L32.9,35.1L32.4,35.8L31.9,35.9L31.4,35.8L27.1,34.1L26.4,33.7L25.9,33.2L25.6,32.5L24.6,33.0L24.9,31.4L25.6,30.2L26.6,29.3L27.6,28.9L29.9,28.9L30.6,28.4L30.4,27.5L32.4,26.4L32.6,25.9L33.1,25.9L33.6,27.0L34.4,26.8L35.4,25.9L36.2,26.2L36.9,27.0L37.2,27.6L36.7,28.0ZM27.9,17.8L27.4,18.5L23.1,20.5L21.1,22.4L19.8,24.3L18.1,25.5L15.0,25.9L12.3,25.9L11.5,26.1L11.0,26.4L10.3,26.4L9.5,25.6L9.3,24.8L9.3,20.0L8.3,18.3L6.8,17.8L6.0,16.3L6.3,15.2L8.0,13.2L9.0,12.6L10.0,12.5L11.0,12.5L11.5,12.5L12.3,12.0L14.0,10.4L15.3,9.8L17.1,8.8L18.6,8.3L22.8,6.2L24.1,6.0L24.9,6.2L25.6,6.9L27.4,6.7L28.4,7.1L29.1,7.6L29.4,8.1L29.4,9.8L29.6,10.2L31.4,10.5L31.9,11.2L32.9,12.0L33.1,12.5L33.1,13.2L32.6,14.0L30.1,16.8L29.4,17.0L28.1,17.5Z"/><path class="cable-line" id="cable-trunk" d="M216,2 Q223,115 167,202 Q150,222 118,228"><title>EllaLink trunk: Europe – Brazil</title></path><path class="cable-line cable-branch" d="M167,202 L135.2,171.4"><title>Branch to Praia</title></path><circle class="cable-pulse" r="5"><animateMotion dur="3.2s" repeatCount="indefinite"><mpath href="#cable-trunk"/></animateMotion></circle><circle class="cable-landing-ring" cx="135.2" cy="171.4" r="6"/><circle class="cable-landing" cx="135.2" cy="171.4" r="4.5"><title>Praia landing station</title></circle><text class="cable-label" x="124" y="190" text-anchor="end">Praia</text><text class="cable-end" x="206" y="16" text-anchor="end">Europe ↗</text><text class="cable-end" x="108" y="234" text-anchor="end">↙ Brazil</text></svg></div></div>
+						<div class="fact-text"><strong>Technology · EllaLink</strong><p>A submarine cable linking Europe and South America passes right by us, with a branch landing in Praia.</p></div>
+					</li>
+					<li class="globe-fact">
+						<div class="gift-stage"><div class="gift" aria-hidden="true"><div class="gift-lid"></div><div class="gift-body"></div></div><div class="gift-spark" aria-hidden="true"></div><div class="prize"><i class="fab fa-git-alt prize-git" aria-hidden="true"></i></div></div>
+						<div class="fact-text"><strong>Git</strong><p>I teach Git and GitHub from zero, in Portuguese. <a href="articles.html">Studa ku mi</a></p></div>
+					</li>
+					<li class="globe-fact" data-act="book">
+						<div class="gift-stage"><div class="gift" aria-hidden="true"><div class="gift-lid"></div><div class="gift-body"></div></div><div class="gift-spark" aria-hidden="true"></div><div class="prize"><i class="fas fa-flask" aria-hidden="true"></i></div></div>
+						<div class="fact-text"><strong>Research</strong><p>I write about Python for research: Matplotlib, LaTeX and Jupyter. <a href="articles.html">Studa ku mi</a></p></div>
+					</li>
+				</ul>
+			</div>
+		</main>
 
 		<script type="text/javascript" src="js/main.js"></script>
 		<script type="text/javascript" src="js/navbar.js"></script>
+		<script type="text/javascript" src="js/i18n.js"></script>
 		<script type="text/javascript" src="js/three-bg.js"></script>
 		<script type="text/javascript" src="js/observer.js"></script>
 	</body>

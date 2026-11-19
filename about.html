@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<meta charset="utf-8">
+		<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ctext y=%22.9em%22 font-size=%2290%22%3E%F0%9F%A4%96%3C/text%3E%3C/svg%3E">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,15 +18,15 @@
 				<h1><a href="index.html" class="logo">威利🤖wjj28</a></h1>
 				<nav>
 					<div class="menu">
-						<li><span><a href="articles.html" class="categories">ARTICLES</a></span></li>
+						<li><span><a href="articles.html" class="categories">STUDA KU MI</a></span></li>
 						<li><span><a href="contact.html" class="categories">GET IN TOUCH</a></span></li>
 					</div>
-					<button class="hamburger">
+					<button class="hamburger" type="button" aria-label="Open menu" aria-expanded="false">
 						<span class="material-icons">menu</span>
 					</button>
 				</nav>
 				<div class="mobile-menu">
-					<a href="articles.html">ARTICLES</a>
+					<a href="articles.html">STUDA KU MI</a>
 					<a href="contact.html">GET IN TOUCH</a>
 				</div>
 			</div>
@@ -37,23 +38,95 @@
 				<!-- <h2 class="about-heading">A human behind<br>the screen.</h2> -->
 			</div> 
 
-			<div class="about-bio fade-in">
-				<div class="bio-item">
-					<span class="bio-emoji">大🐳</span>
-					<p>From the islands of Cabo-Verde but spent a great deal in China</p>
+			<div class="about-grid">
+				<div class="about-bio fade-in">
+					<div class="bio-item">
+						<span class="bio-emoji">大🐳</span>
+						<p>From the islands of Cabo-Verde but spent a great deal in China</p>
+					</div>
+					<div class="bio-item">
+						<span class="bio-emoji">💻</span>
+						<p>A Computer Scientist, passionate about building communities.</p>
+					</div>
+					<div class="bio-item">
+						<span class="bio-emoji">🐶</span>
+						<p>A Dog lover with a deep interest in History, the human kind</p>
+					</div>
+					<div class="bio-item">
+						<span class="bio-emoji">☕</span>
+						<p>Always up for coffee and katxupa</p>
+					</div>
 				</div>
-				<div class="bio-item">
-					<span class="bio-emoji">💻</span>
-					<p>A Computer Scientist, passionate about building communities.</p>
-				</div>
-				<div class="bio-item">
-					<span class="bio-emoji">🐶</span>
-					<p>A Dog lover with a deep interest in History, the human kind</p>
-				</div>
-				<div class="bio-item">
-					<span class="bio-emoji">☕</span>
-					<p>Always up for coffee and katxupa</p>
-				</div>
+
+				<aside class="journey fade-in" aria-labelledby="journey-title">
+					<p class="journey-title" id="journey-title">Where I've studied &amp; worked</p>
+					<div class="journey-stage">
+						<svg id="journey-globe" class="journey-globe" viewBox="0 0 320 320" role="img" aria-label="Globe with a plane flying between Praia, Shanghai, Nanjing and Belo Horizonte"></svg>
+						<span class="journey-badge" id="journey-badge" aria-hidden="true"></span>
+					</div>
+					<div class="journey-card" aria-live="polite">
+						<p class="journey-status" id="journey-status"></p>
+
+						<div class="journey-stop is-current" data-stop="cv" data-kind="work">
+							<p class="journey-kind"><i class="fa-solid fa-briefcase" aria-hidden="true"></i> Work</p>
+							<p class="journey-stop-title">Praia, Cabo Verde</p>
+							<ul>
+								<li><span>Senior Business Analyst</span><em>Now</em></li>
+								<li><span>App Developer &amp; Data Systems Analyst</span><em>2024–2026</em></li>
+								<li><span>Software Engineer</span><em>2021–2024</em></li>
+							</ul>
+							<div class="journey-facts">
+								<p class="journey-fact"><strong>Praia</strong> The name means “beach” in Portuguese. It is the capital, on the island of Santiago.</p>
+							</div>
+						</div>
+
+						<div class="journey-stop" data-stop="sh" data-kind="study">
+							<p class="journey-kind"><i class="fa-solid fa-book" aria-hidden="true"></i> Studies</p>
+							<p class="journey-stop-title">Shanghai, China</p>
+							<ul>
+								<li><span>Chinese Language &amp; Literature <small>Tongji University</small></span><em>2014–2015</em></li>
+							</ul>
+							<div class="journey-facts">
+								<p class="journey-fact"><strong>Shanghai</strong> The name means “upon the sea”; its port is the world's busiest for containers.</p>
+							</div>
+						</div>
+
+						<div class="journey-stop" data-stop="nj" data-kind="study">
+							<p class="journey-kind"><i class="fa-solid fa-book" aria-hidden="true"></i> Studies</p>
+							<p class="journey-stop-title">Nanjing, China</p>
+							<ul>
+								<li><span>MEng, Computer Science <small>Hohai University</small></span><em>2019–2022</em></li>
+								<li><span>BSc, Computer Science <small>NUIST</small></span><em>2015–2019</em></li>
+							</ul>
+							<div class="journey-facts">
+								<p class="journey-fact"><strong>Nanjing</strong> The name means “southern capital”; several dynasties ruled China from here.</p>
+							</div>
+						</div>
+
+						<div class="journey-stop" data-stop="nj" data-kind="work">
+							<p class="journey-kind"><i class="fa-solid fa-briefcase" aria-hidden="true"></i> Work</p>
+							<p class="journey-stop-title">Nanjing, China</p>
+							<ul>
+								<li><span>Co-Director, startup community</span><em>2019–2022</em></li>
+								<li><span>Teaching Assistant, ML course</span><em>2020–2021</em></li>
+							</ul>
+							<div class="journey-facts">
+								<p class="journey-fact"><strong>Nanjing</strong> Its Ming-dynasty city wall is one of the longest still standing in the world.</p>
+							</div>
+						</div>
+
+						<div class="journey-stop" data-stop="bh" data-kind="work">
+							<p class="journey-kind"><i class="fa-solid fa-briefcase" aria-hidden="true"></i> Work</p>
+							<p class="journey-stop-title">Belo Horizonte, MG · Brazil</p>
+							<ul>
+								<li><span>Automation &amp; Data Developer (remote)</span><em>2022–2023</em></li>
+							</ul>
+							<div class="journey-facts">
+								<p class="journey-fact"><strong>Belo Horizonte</strong> The name means “beautiful horizon”; it was one of Brazil's first planned cities.</p>
+							</div>
+						</div>
+					</div>
+				</aside>
 			</div>
 		</div>
 
@@ -94,6 +167,10 @@
 			</div>
 		</footer>
 		<script type="text/javascript" src="js/navbar.js"></script>
+		<script type="text/javascript" src="js/i18n.js"></script>
 		<script type="text/javascript" src="js/observer.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
+		<script type="text/javascript" src="js/journey.js"></script>
 	</body>
 </html>

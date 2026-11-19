@@ -1,16 +1,35 @@
-const hamburger = document.querySelector('.hamburger');
+// Mobile menu: open/close, swap the icon, close on link tap or Escape
+(function () {
+	const hamburger = document.querySelector('.hamburger');
+	const mobileMenu = document.querySelector('.mobile-menu');
+	if (!hamburger || !mobileMenu) return;
 
-const hamburger_icon = hamburger.querySelector('span');
+	const icon = hamburger.querySelector('span');
 
-const mobile_menu = document.querySelector('.mobile-menu');
+	function setOpen(open) {
+		mobileMenu.classList.toggle('is-open', open);
+		document.body.classList.toggle('menu-open', open);
+		hamburger.setAttribute('aria-expanded', open ? 'true' : 'false');
+		hamburger.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+		icon.textContent = open ? 'close' : 'menu';
+	}
 
-console.log(hamburger_icon);
+	hamburger.addEventListener('click', () => {
+		setOpen(!mobileMenu.classList.contains('is-open'));
+	});
 
-hamburger.addEventListener('click', () => {
-	// this.classList.toggle('is-open');
-	hamburger_icon.innertText = hamburger_icon.innertText ===
-	'menu' ? 'close'
-	: 'menu';
+	mobileMenu.querySelectorAll('a').forEach((link) => {
+		link.addEventListener('click', () => setOpen(false));
+	});
 
-	mobile_menu.classList.toggle('is-open');
-});
+	document.addEventListener('keydown', (event) => {
+		if (event.key === 'Escape') setOpen(false);
+	});
+
+	// Leaving mobile width with the menu open: reset it
+	window.addEventListener('resize', () => {
+		if (window.innerWidth >= 870) setOpen(false);
+	});
+
+	setOpen(false);
+})();
