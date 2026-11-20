@@ -4320,3 +4320,68 @@ footer .social_icons.is-docking .social_icon_item i {
         will-change: transform;
     }
 }
+
+/* =====================================================
+   Personal marks: signature seal (header, About) and the
+   "Python for scientific calculation" series logo (cards)
+   ===================================================== */
+header .container .logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.logo-mark {
+    display: block;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    transition: transform 0.5s ease;
+}
+
+.logo:hover .logo-mark {
+    transform: rotate(-12deg) scale(1.08);
+}
+
+.bio-signature {
+    display: block;
+    width: 120px;
+    height: 120px;
+    margin: 12px 0 0 auto;
+    border-radius: 50%;
+    opacity: 0.95;
+    transform: rotate(-8deg);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+}
+
+@media (max-width: 900px), (max-height: 760px) {
+    .bio-signature {
+        display: none;
+    }
+}
+
+.flip-series {
+    position: absolute;
+    left: 10px;
+    bottom: 8px;
+    display: flex;
+    align-items: flex-end;
+    filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.5));
+}
+
+.flip-media .flip-series img {
+    width: 96px;
+    height: auto;
+    object-fit: contain;
+}
+
+.flip-series b {
+    margin-left: -14px;
+    padding: 2px 8px;
+    border-radius: 999px;
+    background: #ffc91d;
+    font-size: 0.68rem;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #2a3d7c;
+}
